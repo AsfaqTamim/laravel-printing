@@ -68,7 +68,7 @@ class Cups implements Driver
         return null;
     }
 
-    /** @return \Illuminate\Support\Collection<int, RawilkPrinter> */
+    /** @return Collection<int, RawilkPrinter> */
     public function printers(?int $limit = null, ?int $offset = null, ?string $dir = null): Collection
     {
         // TODO: find out if CUPS driver can paginate
@@ -97,7 +97,7 @@ class Cups implements Driver
         return null;
     }
 
-    /** @return \Illuminate\Support\Collection<int, \Rawilk\Printing\Contracts\PrintJob> */
+    /** @return Collection<int, PrintJob> */
     public function printJobs(?int $limit = null, ?int $offset = null, ?string $dir = null): Collection
     {
         // TODO: implement printJobs() method.

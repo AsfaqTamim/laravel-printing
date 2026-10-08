@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
 
 class Computers extends Entity
 {
-    /** @var \Illuminate\Support\Collection<int, Computer> */
+    /** @var Collection<int, Computer> */
     public Collection $computers;
 
     public function __construct(array $data = [])

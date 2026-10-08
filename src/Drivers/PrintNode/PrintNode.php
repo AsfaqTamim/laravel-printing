@@ -43,7 +43,7 @@ class PrintNode implements Driver
     }
 
     /**
-     * @return \Illuminate\Support\Collection<int, RawilkPrinter>
+     * @return Collection<int, RawilkPrinter>
      */
     public function printers(?int $limit = null, ?int $offset = null, ?string $dir = null): Collection
     {
@@ -65,7 +65,7 @@ class PrintNode implements Driver
     }
 
     /**
-     * @return \Illuminate\Support\Collection<int, \Rawilk\Printing\Contracts\PrintJob>
+     * @return Collection<int, PrintJob>
      */
     public function printJobs(?int $limit = null, ?int $offset = null, ?string $dir = null): Collection
     {

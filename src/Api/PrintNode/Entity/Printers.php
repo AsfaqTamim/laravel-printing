@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
 
 class Printers extends Entity
 {
-    /** @var \Illuminate\Support\Collection<int, Printer> */
+    /** @var Collection<int, Printer> */
     public Collection $printers;
 
     public function __construct(array $data = [])
